@@ -1,0 +1,32 @@
+/* Chessboard squares */
+.square {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.square.light {
+  background-color: #f0d9b5;
+}
+
+.square.dark {
+  background-color: #b58863;
+}
+
+.square.highlight {
+  outline: 3px solid #3b82f6;
+  outline-offset: -3px;
+}
+
+.square.move-highlight {
+  background-color: #a3d977 !important;
+}
+
+.square.capture-highlight {
+  background-color: #f87171 !important;
+}

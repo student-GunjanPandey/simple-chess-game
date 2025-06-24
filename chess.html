@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Chess Game - Developer: Gunjan Pandey</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center p-4">
+  <header class="mb-6 text-center">
+    <h1 class="text-3xl font-bold mb-1">Simple Chess Game</h1>
+    <p class="text-gray-700">Developer: <span class="font-semibold">Gunjan Pandey</span></p>
+  </header>
+
+  <main class="flex flex-col md:flex-row gap-8">
+    <section class="bg-white rounded-lg shadow-lg p-4">
+      <div id="board" class="grid grid-cols-8 grid-rows-8 w-[384px] h-[384px] border-4 border-gray-700 rounded-md"></div>
+    </section>
+
+    <section class="w-full max-w-md bg-white rounded-lg shadow-lg p-4 flex flex-col">
+      <div class="mb-4">
+        <h2 class="text-xl font-semibold mb-2">Players</h2>
+        <div class="flex justify-between text-gray-800 font-semibold">
+          <div><span class="text-blue-600">White</span>: <span id="whitePlayer">Player 1</span></div>
+          <div><span class="text-red-600">Black</span>: <span id="blackPlayer">Player 2</span></div>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <h2 class="text-xl font-semibold mb-2">Turn</h2>
+        <p id="turnIndicator" class="text-lg font-semibold text-blue-600">White to move</p>
+      </div>
+
+      <div class="mb-4">
+        <h2 class="text-xl font-semibold mb-2">Game Status</h2>
+        <p id="gameStatus" class="text-gray-700 min-h-[2rem]">Game in progress...</p>
+      </div>
+
+      <button id="resetBtn" class="mt-auto bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded transition">
+        Reset Game
+      </button>
+    </section>
+  </main>
+
+  <footer class="mt-8 text-center text-gray-600 text-sm">
+    &copy; 2024 Gunjan Pandey
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
