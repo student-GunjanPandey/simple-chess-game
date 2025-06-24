@@ -15,10 +15,6 @@ Gunjan Pandey
 - Reset button to restart game
 - Clean layout with Tailwind CSS
 
-## 📸 Screenshot
-
-![Screenshot](./Screenshot 2025-06-23 225757.png)
-
 
 ## 🛠️ Technologies Used
 - HTML5
